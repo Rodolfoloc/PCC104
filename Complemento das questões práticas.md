@@ -118,6 +118,14 @@ Algorthm _Convex Hull (P0(x0,y0)... Pn(xn,yn))_
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**return** -1  
 
 <p align="justify">
+A operação básica é executada n - 1 entre 3 laços de repetição
+
+Solução: G(n) = n3
+
+Portanto, crescimento cúbico
+</p>
+
+<p align="justify">
 7)	Dado um conjunto de pontos e distâncias entre cada par dos pontos, o problema é encontrar a rota mais curta possível que visite todos os pontos exatamente uma vez e retorne ao ponto de partida. O problema pode ser definido encontrar o circuito hamiltoniano mais curto do gráfico. Um circuito hamiltoniano é definido como um ciclo que passa por todos os vértices do gráfico exatamente uma vez.
 </p>
 
