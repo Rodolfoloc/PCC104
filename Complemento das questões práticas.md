@@ -120,7 +120,7 @@ Algorthm _Convex Hull (P0(x0,y0)... Pn(xn,yn))_
 <p align="justify">
 A operação básica é executada n - 1 entre 3 laços de repetição
 
-Solução: G(n) = n3
+Solução: G(n) = n<sup>3</sup>
 
 Portanto, crescimento cúbico
 </p>
