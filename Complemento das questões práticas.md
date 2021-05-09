@@ -19,6 +19,14 @@ Algorthm _Bubble Sort (A[0...n-1])_
 ![Imagem1](https://user-images.githubusercontent.com/81366236/112496533-94a43400-8d63-11eb-9c08-02300d829019.png)
 
 <p align="justify">
+A operação básica é executada n - 1 entre 2 laços de repetição
+
+Solução: G(n) = n<sup>2</sup>
+
+Portanto, crescimento quadrático.
+</p>
+
+<p align="justify">
 2)	Selection Sort é uma técnica de classificação bastante simples, pois envolve apenas encontrar o menor elemento em cada passagem e colocá-lo na posição correta. É eficiente quando o array é pequeno, mas seu desempenho é gravemente afetado à medida que aumenta. A técnica consiste de selecionar o menor elemento no array e trocar pelo primeiro elemento. Em seguida, ele troca o segundo menor elemento pelo segundo elemento e assim por diante.
 </p>
 
@@ -38,6 +46,14 @@ Algorthm _Selection Sort (A[0...n-1])_
 ![Imagem2](https://user-images.githubusercontent.com/81366236/112498924-bdc5c400-8d65-11eb-865f-f2a83204731b.png)
 
 <p align="justify">
+A operação básica é executada n - 1 entre 2 laços de repetição
+
+Solução: G(n) = n<sup>2</sup>
+
+Portanto, crescimento quadrático.
+</p>
+
+<p align="justify">
 3)	É a técnica de pesquisa mais básica, a chave a ser pesquisada é comparada sequencialmente com cada elemento.
 </p>
 
@@ -49,6 +65,14 @@ Algorthm _Sequential Search (A[0...n-1],K)_
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**return** i  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**else**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**return** -1  
+
+<p align="justify">
+A operação básica é executada n - 1 entre 1 laços de repetição
+
+Solução: G(n) = n
+
+Portanto, crescimento linear.
+</p>
 
 <p align="justify">
 4)	Quando fazemos uma busca por uma string, algoritmos para pesquisa de padrões são usados. Percorra o padrão sobre o texto caractere por caractere e verifique se há uma correspondência. Se uma correspondência for encontrada, verifique as correspondências subsequentes.
@@ -74,6 +98,14 @@ Algorthm _BruteForceStringMatch (A[0...n-1], P[0...m-1])_
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**return** -1  
 
 <p align="justify">
+A operação básica é executada n - 1 entre 2 laços de repetição
+
+Solução: G(n) = n
+
+Portanto, crescimento linear
+</p>
+
+<p align="justify">
 5)	Recebe um array de n pontos no plano, e o problema é descobrir o par de pontos mais próximo no array. Esse problema simula aplicações como controle de tráfego aéreo, onde monitorar aviões que se aproximam muito pode indicar uma possível colisão.
 </p>
 
@@ -84,6 +116,14 @@ Algorthm _BruteForceClosestPair (P0(x0,y0)... Pn(xn,yn))_
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**for** j = i+1 **to** n-1 **do**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d = min(d, sqrt((xi - xj)2 + (yi - yj)2);  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**return** d
+
+<p align="justify">
+A operação básica é executada n - 1 entre 2 laços de repetição
+
+Solução: G(n) = n<sup>2</sup>
+
+Portanto, crescimento quadrático.
+</p>
 
 <p align="justify">
 6)	Suponha que haja 13 pontos (p0 - p12) no plano. Se alguns pontos podem ser transformados em um polígono que contêm o restante dos pontos, esse polígono é uma casca convexa. 
@@ -150,11 +190,31 @@ Assim, podemos obter a distância mais curta entre os pontos gerando todas as pe
 4.	Retorne a permutação com custo mínimo.
 
 <p align="justify">
+A operação básica é executada n - 1 entre 1 laços de repetição
+
+o While percorre todas as permutações geradas por um algoritmo próprio.
+
+Solução: G(n) = n!
+
+Portanto, crescimento fatorial.
+</p>
+
+<p align="justify">
 8)	Dados os pesos e valores de n itens, coloque esses itens em uma mochila com capacidade capacity para obter o valor total máximo na mochila. Dados dois arrays inteiros weights[0..n-1] e values[0..n-1] (representam pesos e valores associados a n itens, respectivamente) e um inteiro capacity que representa a capacidade da mochila, descubra o subconjunto de valor máximo de forma que a soma dos pesos deste subconjunto seja menor ou igual a capacity. Não é possível dividir um item, ou escolha o item completo ou não escolha. Ilustração do problema:
 </p>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/81366236/112666897-68f47d00-8e3b-11eb-8303-b533dc7710eb.png">
+</p>
+
+<p align="justify">
+A operação básica é executada n - 1 entre o segundo laço de repetição.
+
+O primeiro laço de repetição gera todos os subconjuntos da entrada e domina assintoticamente o segundo laço.
+
+Solução: G(n) = 2<sup>n</sup>
+
+Portanto, crescimento exponencial.
 </p>
 
 <p align="justify">
@@ -189,11 +249,21 @@ Function _bsf (v)_
 // Visita todos os vértices não visitados conectados ao vértice v por um caminho e os numera na ordem em que são visitados por meio de contagem de variável global  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + 1;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**while** a fila não estiver vazia **do**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**for** cada vértice w em V adjacente ao vértice frontal **do** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**for** cada vértice w em V adjacente ao vértice frontal **do**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**if** w é marcado como 0  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + 1;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adiciona w à fila  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;remove o vértice da frente da fila
+
+<p align="justify">
+A operação básica é executada n - 1 entre o segundo laço de repetição.
+
+O laço while diminui a cada interação, pois os nós visitados são retirados da lista.
+
+Solução: G(n) = n
+
+Portanto, crescimento linear.
+</p>
 
 <p align="justify">
 10)	Analogamente a BSF, a ordem em que os vértices são visitados é 2, 0, 1, 3.
@@ -213,3 +283,11 @@ Function _dfs (v)_
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**for** cada vértice w em V adjacente a v **do**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**if** w é marcado como 0  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dfs(w)  
+
+<p align="justify">
+A operação básica é executada n - 1 entre o segundo laço de repetição.
+
+Solução: G(n) = n
+
+Portanto, crescimento linear.
+</p>
